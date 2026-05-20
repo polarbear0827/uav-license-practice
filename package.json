@@ -1,0 +1,10 @@
+{
+  "name": "uav-license-practice",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "extract": "python tools/extract_questions.py",
+    "serve": "python -m http.server 4175 --bind 127.0.0.1 --directory web",
+    "apk": "gradle assembleDebug"
+  }
+}

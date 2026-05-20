@@ -1,0 +1,6 @@
+.codex_tmp/
+.gradle/
+build/
+app/build/
+local.properties
+node_modules/

@@ -1,0 +1,9 @@
+{
+  "name": "無人機普通操作證模擬測驗",
+  "short_name": "無人機測驗",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f4f7fb",
+  "theme_color": "#10233f",
+  "icons": []
+}

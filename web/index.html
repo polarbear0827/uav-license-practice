@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#10233f" />
+    <title>無人機普通操作證模擬測驗</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="mark">UAV</span>
+          <div>
+            <h1>普通操作證</h1>
+            <p>學科模擬測驗</p>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="主要功能">
+          <button class="nav-button active" data-view="dashboard" type="button">總覽</button>
+          <button class="nav-button" data-view="practice" type="button">章節練習</button>
+          <button class="nav-button" data-view="exam" type="button">模擬測驗</button>
+          <button class="nav-button" data-view="review" type="button">錯題複習</button>
+        </nav>
+
+        <div class="source">
+          <span>官方規格</span>
+          <strong>20 題 / 30 分鐘 / 80 分及格</strong>
+          <small>題庫版本：115/2/2</small>
+        </div>
+      </aside>
+
+      <main class="main">
+        <section class="toolbar">
+          <div>
+            <p class="eyebrow">交通部民用航空局題庫</p>
+            <h2 id="view-title">準備狀態</h2>
+          </div>
+          <div class="timer" id="timer" hidden>
+            <span>剩餘</span>
+            <strong id="time-left">30:00</strong>
+          </div>
+        </section>
+
+        <section id="dashboard-view" class="view active-view"></section>
+        <section id="practice-view" class="view"></section>
+        <section id="exam-view" class="view"></section>
+        <section id="review-view" class="view"></section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
